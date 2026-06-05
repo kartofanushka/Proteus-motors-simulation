@@ -10,6 +10,11 @@ This repository contains the C source code and hardware schematics for a 4-wheel
 * **Hardware-Level Safety:** Software ensures all motors stop instantly if no buttons are pressed.
 
 ---
+## Simulation Preview
+
+https://github.com/user-attachments/assets/a1f54131-1fe3-4785-a789-33d5ad5a0071
+
+---
 
 ## Hardware Architecture & Pinout
 
@@ -55,9 +60,6 @@ The firmare is written in embedded C for AVR.
 * `init_system()`: Sets the Data Direction Registers (`DDRB`, `DDRC` as output; `DDRA` as input) and ensures the robot is stationary at boot.
 * `main()`: Runs a continuous polling loop with a 10ms debounce delay (`_delay_ms(10)`), prioritizing movements via an `if-else if` structure based on which button is pressed.
 
----
-## Simulation Preview
 
-https://github.com/user-attachments/assets/a1f54131-1fe3-4785-a789-33d5ad5a0071
 
 
